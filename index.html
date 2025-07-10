@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDX Apparel - Legging & Jogger Premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- ======== HEADER ======== -->
+    <header>
+        <div class="header-content">
+            <a href="#home" class="logo">HDX APPAREL</a>
+            <p class="tagline">Premium Leggings &amp; Joggers</p>
+        </div>
+    </header>
+
+    <!-- ======== NAVIGATION ======== -->
+    <nav>
+        <div class="nav-container">
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#products">Produk</a></li>
+                <li><a href="#categories">Kategori</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+
+            <div class="mobile-menu-toggle" id="mobileToggle" aria-label="Tombol Menu">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="cart-icon" id="cartIcon" aria-label="Keranjang Belanja">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======== HERO ======== -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>ELEVATE YOUR WORKOUT</h2>
+            <p>Didesain untuk Gerakan, Dibuat untuk Kamu</p>
+            <a href="#products" class="btn">Belanja Sekarang</a>
+        </div>
+    </section>
+
+    <!-- ======== MAIN ======== -->
+    <main>
+        <!-- ==== PRODUCTS ==== -->
+        <section id="products">
+            <h2 class="section-title">Produk Terbaru</h2>
+
+            <div class="products">
+                <article class="product">
+                    <div class="product-image">
+                        <div class="product-badge">New</div>
+                        <img src="images/product1.jpg" alt="HDX Power Legging" onerror="this.style.display='none'">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Legging</span>
+                        <h3 class="product-name">HDX Power Legging</h3>
+                        <p class="product-description">Legging kompresi berdaya tahan tinggi dengan bahan four‑way stretch yang mendukung mobilitas maksimal saat latihan intens.</p>
+                        <div class="product-price">Rp 450.000</div>
+                        <button class="btn-buy" onclick="addToCart('HDX Power Legging', 450000)">Beli</button>
+                    </div>
+                </article>
+
+                <article class="product">
+                    <div class="product-image">
+                        <div class="product-badge">Bestseller</div>
+                        <img src="images/product2.jpg" alt="HDX Essential Jogger" onerror="this.style.display='none'">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Jogger</span>
+                        <h3 class="product-name">HDX Essential Jogger</h3>
+                        <p class="product-description">Jogger serbaguna dengan potongan tapered modern dan material ringan anti‑kusut, ideal untuk gym maupun aktivitas harian.</p>
+                        <div class="product-price">Rp 550.000</div>
+                        <button class="btn-buy" onclick="addToCart('HDX Essential Jogger', 550000)">Beli</button>
+                    </div>
+                </article>
+
+                <article class="product">
+                    <div class="product-image">
+                        <div class="product-badge">Premium</div>
+                        <img src="images/product3.jpg" alt="HDX High-Waist Legging" onerror="this.style.display='none'">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Legging</span>
+                        <h3 class="product-name">HDX High‑Waist Legging</h3>
+                        <p class="product-description">Dilengkapi pinggang tinggi ergonomis dan teknologi quick‑dry untuk kenyamanan sepanjang sesi olahraga.</p>
+                        <div class="product-price">Rp 385.000</div>
+                        <button class="btn-buy" onclick="addToCart('HDX High-Waist Legging', 385000)">Beli</button>
+                    </div>
+                </article>
+
+                <article class="product">
+                    <div class="product-image">
+                        <div class="product-badge">Limited</div>
+                        <img src="images/product4.jpg" alt="HDX Performance Jogger" onerror="this.style.display='none'">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Jogger</span>
+                        <h3 class="product-name">HDX Performance Jogger</h3>
+                        <p class="product-description">Jogger edisi terbatas dengan panel ventilasi laser‑cut dan saku ritsleting tersembunyi untuk keamanan barang bawaan.</p>
+                        <div class="product-price">Rp 650.000</div>
+                        <button class="btn-buy" onclick="addToCart('HDX Performance Jogger', 650000)">Beli</button>
+                    </div>
+                </article>
+
+                <article class="product">
+                    <div class="product-image">
+                        <div class="product-badge">Eco‑Friendly</div>
+                        <img src="images/product5.jpg" alt="HDX Eco Legging" onerror="this.style.display='none'">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Legging</span>
+                        <h3 class="product-name">HDX Eco Legging</h3>
+                        <p class="product-description">Legging ramah lingkungan terbuat dari serat daur ulang bersertifikat, tetap lembut dan elastis di setiap gerakan.</p>
+                        <div class="product-price">Rp 420.000</div>
+                        <button class="btn-buy" onclick="addToCart('HDX Eco Legging', 420000)">Beli</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ==== CATEGORIES ==== -->
+        <section id="categories">
+            <h2 class="section-title">Kategori</h2>
+            <div class="categories">
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-running"></i></div>
+                    <h3 class="category-title">Legging Premium</h3>
+                    <p class="category-description">Koleksi legging dengan teknologi terbaru yang memadukan kenyamanan dan daya tahan tinggi.</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-dumbbell"></i></div>
+                    <h3 class="category-title">Jogger Atletik</h3>
+                    <p class="category-description">Jogger berdesain modern dengan material breathable, cocok untuk kardio maupun strength training.</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-leaf"></i></div>
+                    <h3 class="category-title">Eco Series</h3>
+                    <p class="category-description">Produk berbahan ramah lingkungan sebagai bagian dari komitmen kami terhadap keberlanjutan.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==== ABOUT ==== -->
+        <section class="about-section" id="about">
+            <div class="about-content">
+                <h3>Tentang HDX Apparel</h3>
+                <p>HDX Apparel adalah brand lokal yang menghadirkan koleksi legging dan jogger sport dengan desain modern, nyaman, dan fungsional. Kami percaya bahwa setiap gerakan Anda — di gym, saat yoga, atau aktivitas harian — layak mendapatkan dukungan terbaik dari pakaian yang Anda kenakan.
+
+                    Dengan menggunakan bahan berkualitas tinggi yang elastis, breathable, dan cepat kering, setiap produk HDX dirancang untuk menunjang performa dan memberikan kenyamanan maksimal. Baik untuk olahraga intens maupun gaya kasual aktif, koleksi kami hadir dalam berbagai pilihan warna dan ukuran yang stylish dan pas di badan.
+                    
+                    Kami tidak hanya menjual pakaian olahraga — kami mendukung gaya hidup aktif dan percaya diri.
+                    
+                    Gerak bebas. Tampil percaya diri. Bersama HDX Apparel.</p>
+            </div>
+        </section>
+
+        <!-- ==== CONTACT ==== -->
+        <section id="contact">
+            <h2 class="section-title">Kontak Kami</h2>
+            <form class="contact-form" id="contactForm" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Nama</label>
+                    <input type="text" id="name" name="name" placeholder="Nama lengkap" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="email@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Tulis pesan Anda..." required></textarea>
+                </div>
+                <button type="submit" class="btn">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- ======== FOOTER ======== -->
+    <footer>
+        <div class="footer-content">
+            <h2 class="footer-logo">HDX APPAREL</h2>
+            <div class="footer-links">
+                <a href="#home">Beranda</a>
+                <a href="#products">Produk</a>
+                <a href="#categories">Kategori</a>
+                <a href="#about">Tentang</a>
+                <a href="#contact">Kontak</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-contact">
+        <p><strong>Alamat:</strong> Jl. Pasteur No.13, Bandung, Jawa Barat, Indonesia</p>
+        <p><strong>Telepon:</strong> +62 838 3932 4071</p>
+        <p><strong>Email:</strong> hdxapparel.inc@gmail.com</p>
+        <p><strong>Jam Operasional:</strong> Everytime</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
